@@ -1,0 +1,70 @@
+# inputs for general info to be commonly used#
+userName = input("What is your name: ")
+userClass = input("Which class are you in: ")
+totalMarks = float(input("How many marks were your exams out of: "))
+Subject = input("Name all the subjects separated by a whitespace: ")
+#vv this breaks the Subject variable from a string to a list#
+Subjects = Subject.split(" ")
+# inputs for specific numbers of subjects#
+	if len(Subjects) == 1:
+        Marks0 = float(input(f"How many marks have you obtained in {Subjects[0]}: "))
+        percentage0 = Marks0 / totalMarks * 100
+        print(f'''{userName} of {userClass}
+                     Report Card
+        {Subjects[0]} - {percentage0}%''')
+    elif len(Subjects) == 2:
+        Marks0 = float(input(f"How many marks have you obtained in {Subjects[0]}: "))
+        Marks1 = float(input(f"How many marks have you obtained in {Subjects[1]}: "))
+        percentage0 = Marks0 / totalMarks * 100
+        percentage1 = Marks1 / totalMarks * 100
+        print(f'''{userName} of {userClass}
+                     Report Card
+        {Subjects[0]} - {percentage0}%
+        {Subjects[1]} - {percentage1}%''')
+    elif len(Subjects) == 3:
+        Marks0 = float(input(f"How many marks have you obtained in {Subjects[0]}: "))
+        Marks1 = float(input(f"How many marks have you obtained in {Subjects[1]}: "))
+        Marks2 = float(input(f"How many marks have you obtained in {Subjects[2]}: "))
+        percentage0 = Marks0 / totalMarks * 100
+        percentage1 = Marks1 / totalMarks * 100
+        percentage2 = Marks2 / totalMarks * 100
+        print(f'''{userName} of {userClass}
+                     Report Card
+        {Subjects[0]} - {percentage0}%
+        {Subjects[1]} - {percentage1}%
+        {Subjects[2]} - {percentage2}%''')
+    elif len(Subjects) == 4:
+        Marks0 = float(input(f"How many marks have you obtained in {Subjects[0]}: "))
+        Marks1 = float(input(f"How many marks have you obtained in {Subjects[1]}: "))
+        Marks2 = float(input(f"How many marks have you obtained in {Subjects[2]}: "))
+        Marks3 = float(input(f"How many marks have you obtained in {Subjects[3]}: "))
+        percentage0 = Marks0 / totalMarks * 100
+        percentage1 = Marks1 / totalMarks * 100
+        percentage2 = Marks2 / totalMarks * 100
+        percentage3 = Marks3 / totalMarks * 100
+        print(f'''{userName} of {userClass}
+                     Report Card
+        {Subjects[0]} - {percentage0}%
+        {Subjects[1]} - {percentage1}%
+        {Subjects[2]} - {percentage2}%
+        {Subjects[3]} - {percentage3}%''')
+    elif len(Subjects) == 5:
+        Marks0 = float(input(f"How many marks have you obtained in {Subjects[0]}: "))
+        Marks1 = float(input(f"How many marks have you obtained in {Subjects[1]}: "))
+        Marks2 = float(input(f"How many marks have you obtained in {Subjects[2]}: "))
+        Marks3 = float(input(f"How many marks have you obtained in {Subjects[3]}: "))
+        Marks4 = float(input(f"How many marks have you obtained in {Subjects[4]}: "))
+        percentage0 = Marks0 / totalMarks * 100
+        percentage1 = Marks1 / totalMarks * 100
+        percentage2 = Marks2 / totalMarks * 100
+        percentage3 = Marks3 / totalMarks * 100
+        percentage4 = Marks4 / totalMarks * 100
+        print(f'''{userName} of {userClass}
+                     Report Card
+        {Subjects[0]} - {percentage0}%
+        {Subjects[1]} - {percentage1}%
+        {Subjects[2]} - {percentage2}%
+        {Subjects[3]} - {percentage3}%
+        {Subjects[4]} - {percentage4}%''')
+    else:
+        print("Too many subjects, maximum is 5.")
