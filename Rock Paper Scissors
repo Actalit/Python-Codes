@@ -1,0 +1,29 @@
+#adding random module
+import random
+#taking inputs
+options = ("Rock","Paper","Scissors")
+running = True
+while running==True:
+    userchoice = input("Rock Paper or Scissors: ")
+    computerchoice = random.choice(options)
+    #processing and printing outputs
+    if userchoice==computerchoice:
+        print("Draw")
+    elif userchoice=="Rock" and computerchoice=="Paper":
+        print("Computer has won.")
+    elif userchoice=="Rock" and computerchoice=="Scissors":
+        print("User has won.")
+    elif userchoice=="Paper" and computerchoice=="Rock":
+        print("User has won.")
+    elif userchoice=="Paper" and computerchoice=="Scissors":
+        print("Computer has won.")
+    elif userchoice=="Scissors" and computerchoice=="Rock":
+        print("Computer has won.")
+    elif userchoice=="Scissors" and computerchoice=="Paper":
+        print("User has won.")
+    restart = (input("Do you wish to play again? (True/False): "))
+    if restart=="True":
+        continue
+    else:
+        break
+
